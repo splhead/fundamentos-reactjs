@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 interface ContainerProps {
   size?: 'small' | 'large';
@@ -30,6 +31,11 @@ export const Container = styled.div<ContainerProps>`
         &:hover {
           opacity: 0.6;
         }
+      }
+
+      a.is-active {
+        border-bottom: 2px solid ${colors.primary};
+        padding-bottom: 10px;
       }
     }
   }
